@@ -1,0 +1,22 @@
+{
+  "forecast_id": "fc_efd1a0a4a275",
+  "market_venue": "polymarket",
+  "market_id": "355009",
+  "market_question": null,
+  "market_end_date": null,
+  "signal_emitted_at": "2026-05-16T20:48:54.503417+00:00",
+  "strategy_key": "negrisk_rebalance_v2",
+  "agent_id": "qf_negrisk_paper",
+  "predicted_probability_yes": 0.0414,
+  "market_implied_probability_yes": 1.04135939,
+  "edge_pct": -0.99995939,
+  "signal_side": "SHORT",
+  "stake_usd_paper": 100.0,
+  "rationale_hash": "8451ccec2514f20daa9241757f174bc0b8aaaa2fb4b6e3c8ee601d08f74f7690",
+  "resolved": false,
+  "resolution": null,
+  "resolved_at": null,
+  "pnl_usd": null,
+  "brier_contribution": null,
+  "_signal_db_id": "0aba3261-6381-4d93-955b-2211d3db3716"
+}
