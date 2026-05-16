@@ -1,10 +1,10 @@
 {
-  "n_forecasts_total": 0,
+  "n_forecasts_total": 7,
   "n_resolved": 0,
-  "n_unresolved": 0,
+  "n_unresolved": 7,
   "brier_overall": null,
   "pnl_total_usd": 0,
-  "last_updated": "2026-05-16T20:18:38.128532+00:00",
+  "last_updated": "2026-05-16T20:19:55.797276+00:00",
   "calibration": [],
   "sot_thresholds": {
     "brier_institutional": 0.1,
