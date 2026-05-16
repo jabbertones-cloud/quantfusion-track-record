@@ -5,7 +5,7 @@
 > until 3 consecutive profitable paper months.
 
 [![Brier (overall)](https://img.shields.io/badge/brier-n/a-lightgrey)](metrics/overall.json)
-[![Forecasts logged](https://img.shields.io/badge/forecasts-7-blue)](forecasts/)
+[![Forecasts logged](https://img.shields.io/badge/forecasts-10-blue)](forecasts/)
 [![Days running](https://img.shields.io/badge/days_running-1-blue)](metrics/overall.json)
 [![Best DSR](https://img.shields.io/badge/best_DSR-0.000-yellow)](metrics/by_strategy.json)
 
@@ -33,12 +33,12 @@ _No resolved forecasts yet. Awaiting first market resolutions._
 
 ## Overall
 
-- **Total forecasts logged:** 7
+- **Total forecasts logged:** 10
 - **Resolved:** 0
-- **Unresolved (open):** 7
+- **Unresolved (open):** 10
 - **Brier (overall):** n/a
 - **PnL (paper):** $0.00
-- **Last updated (UTC):** 2026-05-16T20:55:54.155781+00:00
+- **Last updated (UTC):** 2026-05-16T20:58:27.442491+00:00
 
 ## How to verify
 
