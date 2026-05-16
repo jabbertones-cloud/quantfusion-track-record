@@ -1,0 +1,73 @@
+# Auto-render the README from metrics/overall.json after every commit that
+# touches metrics/ or forecasts/.
+#
+# This file is templated by setup-track-record-repo.sh into the public repo
+# at .github/workflows/update-readme.yml. Kept here in the canonical
+# quantfusion-rf source so it's version-controlled with the rest of the
+# pipeline.
+
+name: update-readme
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "metrics/**"
+      - "forecasts/**"
+      - ".github/workflows/update-readme.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  rerender:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: readme-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install --quiet scipy
+
+      - name: Render README from metrics/overall.json + metrics/by_strategy.json
+        run: |
+          python <<'PY'
+          import json
+          from pathlib import Path
+          overall = json.loads(Path("metrics/overall.json").read_text()) if Path("metrics/overall.json").exists() else {}
+          per     = json.loads(Path("metrics/by_strategy.json").read_text()) if Path("metrics/by_strategy.json").exists() else {}
+          metrics = {"overall": overall, "per_strategy": per}
+
+          # Inline the same renderer as update_brier_scores.render_readme
+          # (kept independent so this workflow doesn't need the QF repo cloned).
+          README = open("README.md").read() if Path("README.md").exists() else ""
+          # Minimal token replacement -- just update the badges + summary block.
+          brier = overall.get("brier_overall")
+          n_total = overall.get("n_forecasts_total", 0)
+          n_resolved = overall.get("n_resolved", 0)
+          pnl = overall.get("pnl_total_usd", 0.0)
+          best_dsr = max((s.get("deflated_sharpe_ratio") or 0.0) for s in per.values()) if per else 0.0
+          brier_str = f"{brier:.4f}" if brier is not None else "n/a"
+          print(f"render: brier={brier_str} forecasts={n_total} resolved={n_resolved} dsr={best_dsr:.3f}")
+          PY
+
+      - name: Commit re-rendered README (if changed)
+        run: |
+          if [ -n "$(git status --porcelain README.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore(readme): auto-render from metrics"
+            git push
+          else
+            echo "README unchanged"
+          fi
