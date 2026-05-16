@@ -1,0 +1,22 @@
+{
+  "forecast_id": "fc_15e0abd545ff",
+  "market_venue": "polymarket",
+  "market_id": "SMOKE-farm-001",
+  "market_question": "Will candidate X win 2028 election? (longshot)",
+  "market_end_date": null,
+  "signal_emitted_at": "2026-05-16T17:38:46.068848+00:00",
+  "strategy_key": "quantfusion_liquidity_farm_paper",
+  "agent_id": "quantfusion_liquidity_farm_paper",
+  "predicted_probability_yes": 0.1,
+  "market_implied_probability_yes": 0.01,
+  "edge_pct": 0.09000000000000001,
+  "signal_side": "LONG",
+  "stake_usd_paper": 100.0,
+  "rationale_hash": "da5f773bedb2a55b50b01a072855b51cf9948568450e04b54460b0a8caaae3d0",
+  "resolved": false,
+  "resolution": null,
+  "resolved_at": null,
+  "pnl_usd": null,
+  "brier_contribution": null,
+  "_signal_db_id": "cfb107ad-c2ce-4b1d-b1ae-01dc350df609"
+}

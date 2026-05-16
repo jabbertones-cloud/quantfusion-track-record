@@ -1,0 +1,22 @@
+{
+  "forecast_id": "fc_ea0a4470fbb6",
+  "market_venue": "kalshi",
+  "market_id": "FIN",
+  "market_question": null,
+  "market_end_date": null,
+  "signal_emitted_at": "2026-05-16T19:28:08.345098+00:00",
+  "strategy_key": "final",
+  "agent_id": "final",
+  "predicted_probability_yes": 0.99,
+  "market_implied_probability_yes": null,
+  "edge_pct": null,
+  "signal_side": "LONG",
+  "stake_usd_paper": 100.0,
+  "rationale_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "resolved": false,
+  "resolution": null,
+  "resolved_at": null,
+  "pnl_usd": null,
+  "brier_contribution": null,
+  "_signal_db_id": "096a8e3e-f12a-4041-9e6c-eef025809094"
+}

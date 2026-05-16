@@ -1,0 +1,22 @@
+{
+  "forecast_id": "fc_f6f10ed99d80",
+  "market_venue": "polymarket",
+  "market_id": "TEST-orch-edge-20260516185941",
+  "market_question": "Orchestrator edge-trip test (paper)",
+  "market_end_date": null,
+  "signal_emitted_at": "2026-05-16T18:59:49.868264+00:00",
+  "strategy_key": "quantfusion_liquidity_farm_paper",
+  "agent_id": "quantfusion_liquidity_farm_paper",
+  "predicted_probability_yes": 0.1,
+  "market_implied_probability_yes": 0.01,
+  "edge_pct": 0.09000000000000001,
+  "signal_side": "LONG",
+  "stake_usd_paper": 100.0,
+  "rationale_hash": "224c9f96d49cd9c425238ca7006ea608f3fe91da6f0924085703100976aefe4a",
+  "resolved": false,
+  "resolution": null,
+  "resolved_at": null,
+  "pnl_usd": null,
+  "brier_contribution": null,
+  "_signal_db_id": "42ded895-5afe-4d1a-a654-2170dec2fe55"
+}

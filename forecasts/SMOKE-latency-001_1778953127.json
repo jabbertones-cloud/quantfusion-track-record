@@ -1,0 +1,22 @@
+{
+  "forecast_id": "fc_ac7ecc9e3f70",
+  "market_venue": "polymarket",
+  "market_id": "SMOKE-latency-001",
+  "market_question": null,
+  "market_end_date": null,
+  "signal_emitted_at": "2026-05-16T17:38:47.178228+00:00",
+  "strategy_key": "quantfusion_event_latency_arb_paper",
+  "agent_id": "quantfusion_event_latency_arb_paper",
+  "predicted_probability_yes": 0.6,
+  "market_implied_probability_yes": 0.4,
+  "edge_pct": 0.19999999999999996,
+  "signal_side": "LONG",
+  "stake_usd_paper": 100.0,
+  "rationale_hash": "bbe58c53fc5a6a37cf6e15623e591b6045fa5782b19f1cbba5d87f1d067f7707",
+  "resolved": false,
+  "resolution": null,
+  "resolved_at": null,
+  "pnl_usd": null,
+  "brier_contribution": null,
+  "_signal_db_id": "aa4568ea-b108-42c9-978b-5bacc483b89c"
+}

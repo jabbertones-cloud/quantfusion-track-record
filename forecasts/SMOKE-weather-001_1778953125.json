@@ -1,0 +1,22 @@
+{
+  "forecast_id": "fc_6f3bf30d566c",
+  "market_venue": "polymarket",
+  "market_id": "SMOKE-weather-001",
+  "market_question": "Will NYC daily high be 70-80F on 2026-06-01?",
+  "market_end_date": null,
+  "signal_emitted_at": "2026-05-16T17:38:45.463896+00:00",
+  "strategy_key": "quantfusion_weather_arb_paper",
+  "agent_id": "quantfusion_weather_arb_paper",
+  "predicted_probability_yes": 0.7,
+  "market_implied_probability_yes": 0.3,
+  "edge_pct": 0.39999999999999997,
+  "signal_side": "LONG",
+  "stake_usd_paper": 100.0,
+  "rationale_hash": "aa30b3019defe6b176ac4809c345d15baca4469c4c1671381fd4abf30f20c675",
+  "resolved": false,
+  "resolution": null,
+  "resolved_at": null,
+  "pnl_usd": null,
+  "brier_contribution": null,
+  "_signal_db_id": "667e094b-f98c-4081-84ec-6fe0569fe9ba"
+}

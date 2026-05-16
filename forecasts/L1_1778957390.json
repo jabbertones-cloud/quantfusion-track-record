@@ -1,0 +1,22 @@
+{
+  "forecast_id": "fc_5a4fd17a544e",
+  "market_venue": "kalshi",
+  "market_id": "L1",
+  "market_question": null,
+  "market_end_date": null,
+  "signal_emitted_at": "2026-05-16T18:49:50.635878+00:00",
+  "strategy_key": "latency",
+  "agent_id": "latency",
+  "predicted_probability_yes": 0.1,
+  "market_implied_probability_yes": null,
+  "edge_pct": null,
+  "signal_side": "NONE",
+  "stake_usd_paper": 100.0,
+  "rationale_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "resolved": false,
+  "resolution": null,
+  "resolved_at": null,
+  "pnl_usd": null,
+  "brier_contribution": null,
+  "_signal_db_id": "a507b8fe-3e51-4e29-8a2f-1f0930cc822c"
+}
