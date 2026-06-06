@@ -4,7 +4,7 @@
   "n_unresolved": 10,
   "brier_overall": null,
   "pnl_total_usd": 0,
-  "last_updated": "2026-06-06T11:16:08.883678+00:00",
+  "last_updated": "2026-06-06T11:21:12.354512+00:00",
   "calibration": [],
   "sot_thresholds": {
     "brier_institutional": 0.1,
