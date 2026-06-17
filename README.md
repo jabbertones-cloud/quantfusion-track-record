@@ -38,7 +38,7 @@ _No resolved forecasts yet. Awaiting first market resolutions._
 - **Unresolved (open):** 10
 - **Brier (overall):** n/a
 - **PnL (paper):** $0.00
-- **Last updated (UTC):** 2026-06-17T23:52:04.960863+00:00
+- **Last updated (UTC):** 2026-06-17T23:57:08.842355+00:00
 
 ## How to verify
 
